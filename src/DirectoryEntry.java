@@ -21,6 +21,6 @@ public class DirectoryEntry {
 	    	return name;
 	    }
 	    public void setName(String name) {
-	    	this.number = name;
+	    	this.name = name;
 	    }
 }
