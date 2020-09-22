@@ -1,3 +1,5 @@
+package edu.miracosta.cs113.lab5;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,5 +49,19 @@ public class Directory {
 			}
 			return -1;
 		}
-	
+	/** Remove an entry.
+	@param aName The name of the person being removed
+	@return The entry removed, or null if there is no entry for aName
+	*/
+
+		public DirectoryEntry removeEntry(String aName) {
+			DirectoryEntry dE;
+			int index = find(aName);
+			if(index != -1) {
+				dE = theDirectory.get(index);
+				theDirectory.remove(theDirectory.remove(index));
+				return dE;
+			}else
+				return null;
+		}
 }
