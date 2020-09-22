@@ -1,4 +1,5 @@
-package edu.miracosta.cs113.lab5;
+package edu.miracosta.cs113.lab4;
+
 
 public class DirectoryEntry {
 

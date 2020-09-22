@@ -1,4 +1,5 @@
-package edu.miracosta.cs113.lab5;
+package edu.miracosta.cs113.lab4;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.AfterAll;
