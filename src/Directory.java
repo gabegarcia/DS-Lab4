@@ -38,15 +38,6 @@ public class Directory {
 	@return The index of the entry with the requested name.
 	If the name is not in the directory, returns -1
 	*/
-	/*private int find(String name) {
-		int index = 0;
-		while (index < theDirectory.size() && !theDirectory.get(index).getName().equals(name)) {
-			index++;
-		}
-		if(index < theDirectory.size()) return index; // found
-		
-		return -1; // Name not found.
-	}*/	
 		private int find(String name) {
 			int index = 0;
 			for (DirectoryEntry d : theDirectory) {
