@@ -34,8 +34,14 @@ class JUnitDemo {
 	void testAddOrChangeEntry() {
 		assertEquals(directory.addOrChangeEntry("DA",  "000-000-0004"), null); // Checking Add
 		assertEquals(directory.addOrChangeEntry("AB",  "000-000-0004"), "000-000-0000"); // Checking Change
-		
-	//	fail("Not yet implemented");
+		//	fail("Not yet implemented");		
+	}
+	
+	//testing removeEntry
+	@Test
+	void testRemove() {
+		assertEquals(directory.removeEntry("BB"),"BB 000-000-0001");
+		assertEquals(directory.removeEntry("BA"), null);
 	}
 
 }
