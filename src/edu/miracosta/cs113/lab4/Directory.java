@@ -55,13 +55,14 @@ public class Directory {
 	@return The entry removed, or null if there is no entry for aName
 	*/
 
-		public DirectoryEntry removeEntry(String aName) {
+		public String removeEntry(String aName) {
 			DirectoryEntry dE;
 			int index = find(aName);
 			if(index != -1) {
 				dE = theDirectory.get(index);
 				theDirectory.remove(theDirectory.remove(index));
-				return dE;
+				String x = dE.getName() + " " + dE.getNumber();
+				return x; 
 			}else
 				return null;
 		}
